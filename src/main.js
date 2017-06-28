@@ -1,10 +1,14 @@
 import { app } from "hyperapp"
-import view from './view'
 import actions from './actions'
+import events from './events'
+import mixins from './mixins'
 import state from './state'
+import view from './view'
 
 app({
+  actions,
+  events,
+  mixins,
   state,
-  view,
-  actions
+  view
 })
