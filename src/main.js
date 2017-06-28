@@ -1,4 +1,4 @@
-import { app } from "hyperapp"
+import { app } from 'hyperapp'
 import actions from './actions'
 import events from './events'
 import mixins from './mixins'
