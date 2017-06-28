@@ -5,17 +5,18 @@ import uglify from 'rollup-plugin-uglify'
 const prod = process.env.NODE_ENV === 'production'
 
 export default {
+  dest: 'public/bundle.js',
+  entry: 'src/main.js',
+  format: 'iife',
   plugins: [
     babel({
       babelrc: false,
-      presets: ['es2015-rollup'],
       plugins: [
         ['transform-react-jsx', { pragma: 'h' }]
-      ]
+      ],
+      presets: ['es2015-rollup']
     }),
-    resolve({
-      jsnext: true
-    }),
+    resolve({ jsnext: true }),
     prod && uglify()
   ]
 }
