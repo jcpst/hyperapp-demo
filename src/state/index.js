@@ -1,1 +1,12 @@
-export default 0
+export default {
+  data: [
+    {
+      name: '',
+      currencies: [
+        {
+          code: ''
+        }
+      ]
+    }
+  ]
+}
