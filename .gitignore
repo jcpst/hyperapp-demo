@@ -4,6 +4,7 @@
 node_modules/
 public/bundle.js
 
+*.gz
 *.log
 *.swo
 *.swp
