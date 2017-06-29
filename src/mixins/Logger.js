@@ -1,5 +1,5 @@
 export default () => ({
   events: {
-    action: (state, actions) => console.log('HI', state)
+    action: (state, actions) => console.log('data:', state.data)
   }
 })
