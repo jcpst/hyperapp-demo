@@ -4,7 +4,6 @@ export default ({ data, search }) =>
   <div>
     <input type="text" placeholder="Type to search..." onkeyup={search} />
     <table class="table">
-      <caption>Countries</caption>
       <thead>
         <tr>
           <th>name</th>
