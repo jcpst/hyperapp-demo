@@ -8,7 +8,7 @@ import view from './view'
 app({
   actions,
   events,
-  plugins: mixins, // Change after hyperapp is updated.
+  mixins,
   state,
   view
 })
